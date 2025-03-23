@@ -1,0 +1,113 @@
+<!-- Start Navbar -->
+ <style>
+    @media (max-width: 991px) {
+        button{
+            color: #0f172b !important;
+        }
+    }
+    
+    .rotate:hover i.fa-chevron-down{
+        transform: rotate(180deg) !important;
+        
+
+    }
+    .nav-sticky button,.nav-sticky span:not(.bg-red-500){
+        color: #0f172b;
+    }
+    button{
+        cursor: pointer;
+    }
+ </style>
+<nav id="topnav" class="defaultscroll is-sticky tagline-height">
+    <div class="container relative">
+        <!-- Logo container-->
+        <a class="logo" href="index.html" >
+            <span class="inline-block " >
+                <img src="assets/images/logo-dark.png" class="l-dark" alt="">
+                <img src="assets/images/logo-light.png" class="l-light" alt="">
+            </span>
+        </a>
+        <!-- End Logo container-->
+
+        <!-- Start Mobile Toggle -->
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                    <div class="lines">
+                        <i class="fa-solid fa-bars fa-xl "></i>
+                                        </div>
+                </a>
+            </div>
+        </div>
+        <!-- End Mobile Toggle -->
+
+        <!--Login button Start-->
+        <ul class="buy-button list-none mb-0">
+            <li class="inline-block relative pe-1">
+                <button id="searchBtn" class="align-middle inline-flex items-center justify-center text-white text-xl hover:text-gray-300 transition">
+                    <i class="fas fa-search"></i>
+                </button>
+            </li>
+            <li class="inline-block pr-1">
+                <button href="javascript:void(0)" class="text-white text-xl hover:text-gray-300 transition">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </li>
+
+
+
+            
+            <li class="dropdown inline-block relative px-1">
+                <button data-dropdown-toggle="dropdown" class="dropdown-toggle items-center p-2 rounded-full   text-white hover:text-gray-300 transition" type="button">
+                    <i class="fa-regular fa-user text-lg"></i>
+                </button>
+                
+            </li>
+            <li class="dropdown inline-block relative ">
+                <button class="relative text-white text-xl hover:text-gray-300 transition ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                      </svg>
+                                          <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md">
+                        2
+                    </span>
+                </button>
+                <span class="hidden md:inline-block text-white text-sm">
+                    0 <span class="text-lg">﷼</span>
+                </span>
+                            </li>
+        </ul>
+        <!--Login button End-->
+
+        <div id="navigation">
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu nav-light">
+                <li><a href="contact.html" class="sub-menu-item transition">تخفيضات</a></li>
+
+                <li class="has-submenu rotate">
+                    <a href="javascript:void(0)" class=" flex items-center space-x-1 text-white hover:text-gray-300 transition">
+                        <span>نساء</span>
+                        <i class="fas fa-chevron-down text-xs mt-0.5 transition"></i>
+                    </a> 
+                    <ul class="submenu">
+                        <li><a href="index.html" class="sub-menu-item">ملابس</a></li>
+                        <li><a href="index.html"class="sub-menu-item">أحذية</a></li>
+                        <li><a href="index.html" class="sub-menu-item">ساعات</a></li>
+                        <li><a href="index.html" class="sub-menu-item">عطور</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="sale.html" class="sub-menu-item transition">رجال</a></li>
+
+                <li><a href="contact.html" class="sub-menu-item transition">اطفال</a></li>
+            </ul><!--end navigation menu-->
+        </div><!--end navigation-->
+    </div><!--end container-->
+    
+</nav><!--end header-->
+<!-- End Navbar -->
+<script>
+    document.getElementById("searchBtn").addEventListener("click", function () {
+        document.getElementById("searchModal").classList.remove("hidden");
+    });
+</script>

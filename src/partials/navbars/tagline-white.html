@@ -1,0 +1,33 @@
+<!-- ✅ الشريط الإخباري -->
+<div class="relative overflow-hidden bg-gray-900 h-10 text-white">
+    <div id="marquee" class="flex whitespace-nowrap w-max will-change-transform">
+      <span class="mx-6">🔥 خصم خاص بمناسبة رمضان | 🚚 شحن مجاني | 🎁 هدية مجانية عند الطلب الأول</span>
+    </div>
+
+  </div>
+  
+  <style>
+    #marquee {
+      animation: scroll-marquee 3005s linear infinite;
+    }
+  
+    @keyframes scroll-marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+  <script>
+    const marquee = document.getElementById("marquee");
+    const baseText = marquee.innerHTML;
+  
+    // عدد التكرارات حسب العرض (غيّره حسب الحاجة)
+    const repeatCount = 1000;
+  
+    for (let i = 0; i < repeatCount - 1; i++) {
+      marquee.innerHTML += baseText;
+    }
+  </script>

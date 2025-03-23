@@ -1,0 +1,249 @@
+<script src="assets/js/plugins.init.js"></script>
+<script src="assets/js/app.js"></script>
+
+
+<script>
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 5); // بعد 5 أيام من الآن
+
+    const countdown = () => {
+      const now = new Date().getTime();
+      const distance = targetDate.getTime() - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days.toString().padStart(2, '0');
+      document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+    };
+
+    setInterval(countdown, 1000);
+    countdown();
+  </script>
+              <script>
+                const targetDate2 = new Date();
+                targetDate2.setDate(targetDate2.getDate() + 5); // بعد 5 أيام من الآن
+            
+                const countdown2 = () => {
+                  const now = new Date().getTime();
+                  const distance = targetDate2.getTime() - now;
+            
+                  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+                  document.getElementById("days2").innerText = days.toString().padStart(2, '0');
+                  document.getElementById("hours2").innerText = hours.toString().padStart(2, '0');
+                  document.getElementById("minutes2").innerText = minutes.toString().padStart(2, '0');
+                  document.getElementById("seconds2").innerText = seconds.toString().padStart(2, '0');
+                };
+            
+                setInterval(countdown2, 1000);
+                countdown2();
+              </script>
+                          <!-- سكربت العداد -->
+            <script>
+                const targetDate3 = new Date();
+                targetDate3.setDate(targetDate3.getDate() + 5); // بعد 5 أيام من الآن
+            
+                const countdown3 = () => {
+                  const now = new Date().getTime();
+                  const distance = targetDate.getTime() - now;
+            
+                  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+                  document.getElementById("days3").innerText = days.toString().padStart(2, '0');
+                  document.getElementById("hours3").innerText = hours.toString().padStart(2, '0');
+                  document.getElementById("minutes3").innerText = minutes.toString().padStart(2, '0');
+                  document.getElementById("seconds3").innerText = seconds.toString().padStart(2, '0');
+                };
+            
+                setInterval(countdown3, 1000);
+                countdown3();
+              </script>
+                      <script>
+                        const products = {
+                          men: [
+                            {
+                              name: "نظارات شمسية رجالية",
+                              image: "assets/images/shop/men-sun-glasses.jpg",
+                              price: "٦٠٫٠٠ ﷼",
+                              oldPrice: "٨٠٫٠٠ ﷼",
+                              rating: 4.8
+                            },
+                            {
+                              name: "نظارات شمسية رجالية",
+                              image: "assets/images/shop/men-sun-glasses.jpg",
+                              price: "٦٠٫٠٠ ﷼",
+                              oldPrice: "٨٠٫٠٠ ﷼",
+                              rating: 4.8
+                            },
+                            {
+                              name: "نظارات شمسية رجالية",
+                              image: "assets/images/shop/men-sun-glasses.jpg",
+                              price: "٦٠٫٠٠ ﷼",
+                              oldPrice: "٨٠٫٠٠ ﷼",
+                              rating: 4.8
+                            },
+                            {
+                              name: "ساعة رجالية أنيقة",
+                              image: "assets/images/shop/apple-smart-watch.jpg",
+                              price: "٢٢٠٫٠٠ ﷼",
+                              oldPrice: "٢٩٠٫٠٠ ﷼",
+                              rating: 4.7
+                            }
+                          ],
+                          women: [
+                            {
+                              name: "نظارات نسائية فاخرة",
+                              image: "assets/images/shop/women-s-white-low-heel-shoes.jpg",
+                              price: "١٢٠٫٠٠ ﷼",
+                              oldPrice: "١٥٠٫٠٠ ﷼",
+                              rating: 4.9
+                            },
+                            {
+                              name: "نظارات نسائية فاخرة",
+                              image: "assets/images/shop/women-s-white-low-heel-shoes.jpg",
+                              price: "١٢٠٫٠٠ ﷼",
+                              oldPrice: "١٥٠٫٠٠ ﷼",
+                              rating: 4.9
+                            },
+                            {
+                              name: "نظارات نسائية فاخرة",
+                              image: "assets/images/shop/women-s-white-low-heel-shoes.jpg",
+                              price: "١٢٠٫٠٠ ﷼",
+                              oldPrice: "١٥٠٫٠٠ ﷼",
+                              rating: 4.9
+                            },
+                            {
+                              name: "حقيبة جلدية كلاسيكية",
+                              image: "assets/images/shop/ladies-skirt-pair.jpg",
+                              price: "٣٥٠٫٠٠ ﷼",
+                              oldPrice: "٤٠٠٫٠٠ ﷼",
+                              rating: 4.6
+                            }
+                          ],
+                          kids: [
+                            {
+                              name: "قميص أطفال برسوم",
+                              image: "assets/images/shop/casual-men-shorts.jpg",
+                              price: "٥٠٫٠٠ ﷼",
+                              oldPrice: "٧٠٫٠٠ ﷼",
+                              rating: 4.5
+                            },
+                            {
+                              name: "قميص أطفال برسوم",
+                              image: "assets/images/shop/casual-men-shorts.jpg",
+                              price: "٥٠٫٠٠ ﷼",
+                              oldPrice: "٧٠٫٠٠ ﷼",
+                              rating: 4.5
+                            },
+                            {
+                              name: "قميص أطفال برسوم",
+                              image: "assets/images/shop/casual-men-shorts.jpg",
+                              price: "٥٠٫٠٠ ﷼",
+                              oldPrice: "٧٠٫٠٠ ﷼",
+                              rating: 4.5
+                            },
+                            {
+                              name: "حذاء رياضي للأطفال",
+                              image: "assets/images/shop/fashion-shoes-sneaker.jpg",
+                              price: "٩٠٫٠٠ ﷼",
+                              oldPrice: "١٢٠٫٠٠ ﷼",
+                              rating: 4.7
+                            }
+                          ]
+                        };
+                      
+                        function changeCategory(category) {
+                          const container = document.getElementById("product-container");
+                          container.innerHTML = ""; // إفراغ المحتوى الحالي
+                      
+                          products[category].forEach(product => {
+                            const card = `
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md flex overflow-hidden w-full max-w-full">
+                              <img src="${product.image}" alt="${product.name}" class="w-40 h-40 object-contain p-4">
+                              <div class="p-4 flex flex-col justify-between flex-1">
+                                <div>
+                                  <h3 class="text-gray-800 dark:text-white font-semibold text-base mb-2">${product.name}</h3>
+                                  <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-red-600 font-bold text-base">${product.price}</span>
+                                    <del class="text-gray-400 text-sm">${product.oldPrice}</del>
+                                  </div>
+                                  <div class="flex items-center gap-1 text-amber-500 text-sm mb-2">
+                                    <i class="mdi mdi-star"></i>
+                                    <span>${product.rating}</span>
+                                  </div>
+                                </div>
+                                <a href="shop-cart.html"
+                                   class="border border-slate-800 text-slate-800 dark:border-white dark:text-white text-sm py-2 px-4 rounded-md flex items-center justify-center gap-2 hover:bg-slate-800 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition">
+                                  <i class="fa-solid fa-plus text-sm"></i>
+                                  <span>إضافة للسلة</span>
+                                </a>
+                              </div>
+                            </div>`;
+                            container.innerHTML += card;
+                          });
+                        }
+                      
+                        // تحميل القسم الرجالي عند فتح الصفحة
+                        window.addEventListener("DOMContentLoaded", () => {
+                          changeCategory('men');
+                        });
+                      </script>
+                                  <!-- JavaScript -->
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  const faqColumns = document.querySelectorAll("#faq > div");
+            
+                  faqColumns.forEach(column => {
+                    const toggles = column.querySelectorAll(".faq-toggle");
+            
+                    toggles.forEach(toggle => {
+                      toggle.addEventListener("click", () => {
+                        const content = toggle.nextElementSibling;
+                        const icon = toggle.querySelector("i");
+                        const isOpen = content.style.maxHeight && content.style.maxHeight !== "0px";
+            
+                        // إغلاق جميع الأسئلة داخل نفس العمود فقط
+                        column.querySelectorAll(".faq-content").forEach(el => {
+                          el.style.maxHeight = null;
+                        });
+                        column.querySelectorAll(".faq-toggle i").forEach(el => {
+                          el.classList.remove("rotate-180");
+                        });
+            
+                        // إذا لم تكن مفتوحة، افتحها
+                        if (!isOpen) {
+                          content.style.maxHeight = content.scrollHeight + "px";
+                          icon.classList.add("rotate-180");
+                        }
+                      });
+                    });
+                  });
+                });
+              </script>
+                        <script>
+                            const mapLinks = {
+                              jeddah1: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.805749!2d39.1978021!3d21.5831165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0eaf05b8b91%3A0x1cb55f13840a7293!2z2LTYsdmD2Kkg2KfZhNio2YjYsdmK2YUg2YXYp9ix2KkgLSBKZWRkYWg!5e0!3m2!1sar!2ssa!4v1710946972350",
+                              jeddah2: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.9520323!2d39.1462511!3d21.591251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3dd33c75ed71b%3A0xfbd8d7f799d0c26a!2z2YXYs9iq2LTZgdmK2YUg2YXYqtmF2YjYsdmK2YUgLSBKZWRkYWggUmF3ZGFo!5e0!3m2!1sar!2ssa!4v1710946972360",
+                              riyadh: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.3109905085936!2d46.6752951!3d24.713551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f02ed9b11cd0b%3A0x7d8b2602d3a5a8ef!2zUm95YWwgU3RvcmU!5e0!3m2!1sar!2ssa!4v1710946972340"
+                            };
+                          
+                            function showMap(branch) {
+                              document.getElementById("map-frame").src = mapLinks[branch];
+                          
+                              // active tab
+                              document.querySelectorAll('[id^="tab-"]').forEach(el => el.classList.remove("border-purple-600", "text-purple-600"));
+                              document.getElementById(`tab-${branch}`).classList.add("border-purple-600", "text-purple-600");
+                            }
+                          </script>
+                          
