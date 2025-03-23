@@ -1,33 +1,4 @@
-/* Template Name: Cartzio - Fashion Store eCommerce Tailwind CSS Landing Template
-   Author: Shreethemes
-   Email: support@shreethemes.in
-   Website: https://shreethemes.in
-   Version: 1.1.0
-   Created: March 2023
-   File Description: Common JS file of the template(plugins.init.js)
-*/
 
-
-/*********************************/
-/*         INDEX                 */
-/*================================
- *     01.  Tiny Slider          *
- *     02.  Data Counter         *
- *     03.  Tobii lightbox       * (For Portfolio pages)
- *     04.  Back Button          *
- *     05.  Components           *
- *          1. Navtabs           *
- *          2. Accordions        *
- *     06.  Maintenance Js       * (For Maintenance Page)
- *     07.  Countdown Js         * (For Comingsoon Page)
- *     08.  Upload Profile       *
- *     09.  Custom Dropdown      *
- *     10.  Swiper SLider Js     *
- ================================*/
- 
-//=========================================//
-/*            01) Tiny slider              */
-//=========================================//
 
 if(document.getElementsByClassName('tiny-single-item').length > 0) {
     var slider = tns({

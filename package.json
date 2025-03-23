@@ -2,7 +2,7 @@
 	"private": true,
 	"name": "rzq",
 	"version": "1.1.0",
-	"description": "Fashion Store eCommerce Tailwind CSS Landing Template",
+	"description": "Store Template",
 	"main": "gulpfile.js",
 	"author": "ShreeThemes",
 	"browserslist": [
